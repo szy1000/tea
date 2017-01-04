@@ -1,0 +1,41 @@
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
+.login{
+	overflow:hidden;
+	background:#feeed4;
+	.loginBox{
+		position: relative;
+		padding-top: 170px;
+		width: 440px;
+		height: 510px;
+		text-align: center;
+		background-image:url(images/login-bg.png);
+		label{
+			width: 15%;
+			font-size: 14px;
+			color: #090909;
+		}
+		li{
+			margin-bottom: 20px;
+		}
+		input{
+			padding:8px 10px;
+			width: 250px;
+			border:1px solid #926f38;
+			background:transparent;
+		}
+		button{
+			margin-top: 45px;
+			margin-left: 70px;
+			width: 250px;
+			height: 60px;
+			border:none;
+			background:transparent;
+			&:focus{
+				outline: none;
+			}
+		}
+	}
+}

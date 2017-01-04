@@ -1,0 +1,130 @@
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+@import "iconfont";
+@import "forms";
+@import "button";
+@import "table";
+
+@import "normalize-css/normalize.css";
+
+.clearfix {
+  @include clearfix();
+}
+.center-block {
+  @include center-block();
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+
+.showInline {
+  display: inline-block !important;
+}
+
+// .fade {
+//   opacity: 0;
+//   -webkit-transition: opacity .15s linear;
+//        -o-transition: opacity .15s linear;
+//           transition: opacity .15s linear;
+// }
+// .fade.in {
+//   opacity: 1;
+// }
+.fadeIn{
+  opacity: 1!important;
+  -webkit-transition: opacity .15s linear;
+       -o-transition: opacity .15s linear;
+          transition: opacity .15s linear;
+}
+* {
+  @include box-sizing(border-box);
+}
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  position: relative;
+  line-height: $line-height-base;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $text-color;
+  background: #feeed4;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color:  $brand;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    outline: none;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+h1, .h1 { font-size: $font-size-h1; }
+h2, .h2 { font-size: $font-size-h2; }
+h3, .h3 { font-size: $font-size-h3; }
+h4, .h4 { font-size: $font-size-h4; }
+h5, .h5 { font-size: $font-size-h5; }
+h6, .h6 { font-size: $font-size-h6; }
+
+.wrapper{
+  @include center-block();
+  width: 1200px;
+}
+.sm-wrapper{
+  @include center-block();
+  width: 1000px;
+}
+
+.mg0{
+  margin:0!important;
+}
+.mgt{
+  margin-top: 0!important;
+}
+.mgb{
+  margin-bottom: 0!important;
+}
+
+ul.inline >li{
+  display: inline-block;
+}

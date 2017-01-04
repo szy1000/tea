@@ -1,0 +1,19 @@
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
+
+@media (max-width: 600px) {
+	.wrapper{
+		width: 100%;
+	}
+  body{
+  	background-color: red;
+  }
+	.topbar{
+		display: none;
+	}
+	.navbar{
+		
+	}
+}

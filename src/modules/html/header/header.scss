@@ -1,0 +1,37 @@
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
+.header{
+	color:#deaa5f;
+	background-color: $brand;
+	.topbar{
+		height:30px;
+		line-height:30px;
+		a{
+			color:#deaa5f!important;
+		}
+	}
+
+	.navbar{
+		padding-top: 25px;
+		background-color:#feeed4;
+		text-align: center;
+	}
+	.links{
+		a{
+			display: block;
+			padding:20px 40px 0;
+			line-height: 87px;
+			font-size: 22px;
+			font-family: "华文新魏";
+			background:transparent;
+			background-repeat:no-repeat;
+			&:hover{
+				background:url("images/hover-bg.png");
+				background-position:0 -6px;
+				// background-size:cover;
+			}
+		}
+	}
+}
