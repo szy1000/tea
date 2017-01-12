@@ -88,9 +88,9 @@ select[size] {
   }
 
   // Reset height for `textarea`s
-  textarea& {
-    height: auto;
-  }
+  // textarea& {
+  //   height: auto;
+  // }
 }
 
 .radio,

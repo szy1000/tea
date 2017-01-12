@@ -1,19 +1,53 @@
 // Core variables and mixins
 @import "variables";
 @import "mixins";
-
+.navbar-mobile{
+	display:none;
+}
 
 @media (max-width: 600px) {
 	.wrapper{
 		width: 100%;
 	}
-  body{
-  	background-color: red;
-  }
 	.topbar{
 		display: none;
 	}
-	.navbar{
-		
+	.navbar-pc{
+		display:none;
+	}
+	.navbar-mobile{
+		padding:1vh 0 !important;
+		display:block;
+		text-align:center;
+		ul.inline>li{
+			padding:10px 0;
+			display:block;
+			a{
+				padding:0;
+			}
+		}
+		.links{
+			padding-top:10px;
+			background-color:#feeed4;
+			a{
+				font-size:14px;
+				line-height:1.2;
+			}
+		}
+	}
+
+	.login,.register{
+		.loginLeft,.registerLeft{
+			display:none;
+		}
+		.loginBox,.registerBox{
+			float:none!important;
+			padding-top:30%;
+			margin:2em auto 0;
+			width:80%;
+			height:auto;
+			background-size:cover;
+
+		}
 	}
 }

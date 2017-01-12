@@ -97,24 +97,24 @@
   }
   &:active,
   &.active,
-  .open > .dropdown-toggle& {
-    color: $color;
-    background-color: darken($background, 10%);
-        border-color: darken($border, 12%);
+  // .open > .dropdown-toggle& {
+  //   color: $color;
+  //   background-color: darken($background, 10%);
+  //       border-color: darken($border, 12%);
 
-    &:hover,
-    &:focus,
-    &.focus {
-      color: $color;
-      background-color: darken($background, 17%);
-          border-color: darken($border, 25%);
-    }
-  }
-  &:active,
-  &.active,
-  .open > .dropdown-toggle& {
-    background-image: none;
-  }
+  //   &:hover,
+  //   &:focus,
+  //   &.focus {
+  //     color: $color;
+  //     background-color: darken($background, 17%);
+  //         border-color: darken($border, 25%);
+  //   }
+  // }
+  // &:active,
+  // &.active,
+  // .open > .dropdown-toggle& {
+  //   background-image: none;
+  // }
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
@@ -166,13 +166,13 @@
 }
 
 // Responsive utilities
-@mixin responsive-visibility() {
-  display: block !important;
-  table&  { display: table !important; }
-  tr&     { display: table-row !important; }
-  th&,
-  td&     { display: table-cell !important; }
-}
+// @mixin responsive-visibility() {
+//   display: block !important;
+//   table&  { display: table !important; }
+//   tr&     { display: table-row !important; }
+//   th&,
+//   td&     { display: table-cell !important; }
+// }
 
 @mixin responsive-invisibility() {
   display: none !important;
